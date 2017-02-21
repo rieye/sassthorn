@@ -5,7 +5,23 @@
 }
 
 .site-main {
-	margin: 0 $size__site-sidebar 0 0;
+	margin: $size__site-margin-narrow $size__site-sidebar $size__site-margin-narrow $size__site-margin-narrow;
+}
+@media screen and (min-width: 30em) {
+	.site-main {
+		margin: $size__site-margin-medium $size__site-sidebar $size__site-margin-medium $size__site-margin-medium;
+	}
+}
+@media screen and (min-width: 40em) {
+	.site-main {
+		margin: $size__site-margin-wide $size__site-sidebar $size__site-margin-wide $size__site-margin-wide;
+	}
+}
+@media screen and (min-width: 57em) {
+	.site-main {
+		max-width: 45em;
+		margin: $size__site-margin-wide auto;
+	}
 }
 
 .site-content .widget-area {

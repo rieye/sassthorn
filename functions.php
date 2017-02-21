@@ -107,6 +107,9 @@ add_action( 'widgets_init', 'sassthorn_widgets_init' );
 function sassthorn_scripts() {
 	wp_enqueue_style( 'sassthorn-style', get_stylesheet_uri() );
 
+	// Add Google font
+	wp_enqueue_style( 'sassthorn-google-fonts', 'https://fonts.googleapis.com/css?family=Alegreya|Source+Sans+Pro:400,700' );
+
 	wp_enqueue_script( 'sassthorn-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'sassthorn-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );

@@ -43,3 +43,10 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+.site-main {
+	font-size: $font__main-size-wide;
+}
+@media screen and (min-width: 40em) {
+	font-size: $font__main-size-narrow;
+}
